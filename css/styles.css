@@ -1,0 +1,262 @@
+
+/*paleta colores navideños https://colorhunt.co/palette/820000b9005bff7c7cfee0c0 */ 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(84 82 82);
+    background: url(img/gallery/ocean.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: 10px;
+    margin: 5px;
+    display: block;
+}
+
+.bordes {
+  border:solid  rgb(130, 0, 0);
+  border-radius: 10px;
+}
+
+#bg {
+  background: url(/img/gallery/ocean.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fondo{
+    background: url(/img/pavo.png) repeat-y ;
+    position: relative;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 600;
+    padding: 4px 0px;
+}
+
+h1 {
+    color: rgb(130, 0, 0);
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+h4, h5, h6 {
+    font-size: 1.3em;
+}
+
+article h3 {
+    font-size: 2.5em;
+    color: #9933cc;
+
+}
+
+/* tablas */
+
+table{
+    width: 99%;
+    text-align: center;
+    color: rgb(35, 37, 34);
+    margin: 5px;
+    padding: 3px;
+    font-style: normal;
+    background-color: grey;
+
+}
+.table {
+    color: rgb(48, 48, 48);
+
+}
+
+td{
+    width: 33%;
+    padding: 3px;
+    background-color: white;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+table .precio {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.ceros {
+    font-size: 2rem;
+    font-weight: 200;
+    bottom: 30px;
+    position: relative;
+}
+
+.p {
+    color: rgb(100, 159, 0);
+}
+
+/* clases personalizadas para tablas de precios */
+table .presencia{
+    background-color: cyan;
+}
+.emprendedor{
+    background-color: rgba(255, 165, 0, 0.8);
+}
+.empresa{
+    background-color: greenyellow;
+}
+
+/* personalizar la etiqueta o tag img*/
+
+img {
+    src: url(img/pavo.png);
+}
+
+th{
+    border-radius: 3px;
+    padding: 3px;
+}
+
+
+
+.cajas {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.caja1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(139, 139, 139);
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 5px;
+    margin: 3px;
+    width: 30%;
+}
+
+
+/* maquetacion grilla - css RWD grid*/
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 10px 5px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+  }
+  
+  .cards-bt {
+     width: 30%;
+  }
+  .menu {
+    height: 100%;
+    
+  }
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu li a:hover {
+    
+    color: dimgray;
+  }
+
+  .video {
+    text-align: center;
+    align-items: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #00597a;
+    color: #060606;
+    float: right;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav li a:hover {
+    
+    color: dimgray;
+  }
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (min-width: 600px) {
+
+  div {   
+    max-width: 100%;
+  }
+}
