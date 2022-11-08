@@ -1,5 +1,6 @@
 
-/*paleta colores navideños https://colorhunt.co/palette/820000b9005bff7c7cfee0c0 */ 
+/*paleta colores navideños
+ https://colorhunt.co/palette/820000b9005bff7c7cfee0c0 */ 
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -7,11 +8,16 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(84 82 82);
-    background: url(img/gallery/ocean.jpg) no-repeat center center fixed;
+    background: url(/img/gallery/mountainskies.jpg) grey no-repeat center center fixed;
     background-size: cover;
     display: 10px;
     margin: 5px;
     display: block;
+}
+
+.transparente {
+  background: rgba(255, 157, 0, 0.30);
+
 }
 
 .bordes {
@@ -238,7 +244,7 @@ th{
   nav li {
     padding: 8px;
     margin-bottom: 7px;
-    background-color: #00597a;
+    /*background-color: #00597a;*/
     color: #060606;
     float: right;
   }
