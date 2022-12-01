@@ -7,8 +7,7 @@
     <link rel="shortcut icon" href="img/usuarios-alt.png" type="image/x-icon">
     <title>Creación de contenidos - SoftTech</title>
     <link rel="stylesheet" href="css/estilos.css">
-
-
+  
     <!-- bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
@@ -17,12 +16,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 
     <script src="js/funciones.js"></script>
+
+    <script>
+      nom='hola'
+      function hola(){
+
+      }
+    </script>
  </head>
 <body>
-    <!-- 
-      Boton Mercado Pago <button> <a href="http://link.mercadopago.com.ar/riotech"> PAGAR</a></button>
-      Aqui pueden ir los script de JS-->
-
+ 
   <div class="container-fluid">
     <header>
       <div class=" row position-relative"> 
@@ -52,7 +55,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <li><a class="dropdown-item" href="nuevo.html">Otro Inicio</a></li>
-                      <li><a class="dropdown-item" href="flexresponsive.html">Mi CV</a></li>
+                      <li><a class="dropdown-item" href="quien-soy.html">Mi CV</a></li>
                       <li><a class="dropdown-item" href="grid.html">CSS Grid</a></li>
                       <li><a class="dropdown-item" href="webgrilla.html">Grilla</a></li>
                     </ul>
@@ -81,44 +84,90 @@
 
     <main class="p-5">
 
-      <!-- JavaScript -->
+       <h1 id="tit1" onmouseover="cambiarColor('green')" onmouseout="cambiarColor('rojo')"> Arrancamos con ejemplos de JavaScript </h1>
+   <!-- 
+      Boton Mercado Pago <button> <a href="http://link.mercadopago.com.ar/riotech"> PAGAR</a></button>
+      Aqui pueden ir los script de JS-->
+    <h3>Boton PAGAR Mercado pago</h3>
+    <button class="btn btn-info"> <a class="MP" href="http://link.mercadopago.com.ar/riotech" target="_blank"> PAGAR</a></button>
+   <br>
+   
+   <h3>Ingresa tu nombre completo y hora de ingreso:</h3>
+  <form action="" method="get" class="form">
+    <input type="text" id="nom" name="nom" placeholder="Ingresa tu nombre">
+    <input type="text" id="ape" name="ape" placeholder="Ingresa tu apellido">
+    <input type="number" name="hora" id="hora" placeholder="Que hora es?">
+    
+    <button onclick="mostrarDatosForm(nom, ape)"> Mostrar </button>
+  </form>
+<p id="dia"><script>mostrarHoraActual ()</script> </p>
 
-<!-- Aqui pueden ir los script de JS-->
-<script> 
-  document.write ("Muestra de texto");
-</script>
 <br>
-      <p class="text-danger bg-light" id="hola" onclick="cambiarNombre()">Nombre : Viviana</p>
+
 <br>
-      <button onclick="document.getElementById('boton').innerHTML=Date()">Ver fecha y Hora</button>
+      <p onclick="holaMundo(nombre, apellido)"> Saludoss!!
+        <script> 
+          //window.alert("Hola " + nombre +" Tu edad es: " + miedad)
+        </script>
+      </p>
 
-      <p id="boton" class="h3" onmouseout="ocultarFecha()">Fecha</p>
-      <h1 id="titulo" ondblclick="cambiarColor()">Probando JavaScript</h1>
-      <h4><script>document.write(Date())</script></h4>
-      <input type=button value=Volver onclick="window.location.href = 'index.html'">
 
-      <!-- carrusel - galeria de fotos -->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/carousel/falls2.jpg" class="d-block w-100" alt="cascadas">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carousel/mountainskies.jpg" class="d-block w-100" alt="montanias">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carousel/ocean.jpg" class="d-block w-100" alt="oceanos">
-          </div>
+<div class="row bg-warning border border-1 border-danger" >
+  <div class="col-4"><script>document.writeln ("Bienvenido/a: ", nombre, " a mi sitio");</script></div>
+  <div class="col-4"><script>document.writeln (apellido)</script></div>
+  <div class="col-4"><script>document.writeln (miedad)</script></div>
+</div>
+
+<button id="boton2">
+  <script>document.getElementById('boton2').innerHTML=Date()</script>
+</button>
+
+<button ondblclick="document.getElementById('fecha').innerHTML=nombre">
+  Mostrar Nombre: 
+</button> <h5 id="fecha"></h5>
+
+<br>
+      <p class="text-danger bg-light" id="hola" on onclick="cambiarNombre()" onmouseout="document.getElementById('hola').innerHTML='Mi nombre es Viviana'" >Mi nombre es Viviana</p>
+      <h5 onclick="document.getElementById('hola').innerHTML='Mi nombre es Viviana'" >restaurar parrafo</h5>
+<br>
+
+<p id="boton" class="h3" onmouseout="ocultarFecha()">Fecha</p>
+<h1 id="titulo" ondblclick="cambiarColor()">Probando JavaScript</h1>
+<h4><script>document.write(Date())</script></h4>
+
+
+<input type=button value=Volver onclick="window.location.href = 'index.html'">
+
+
+
+
+<h4 id="anio" onclick="edadUsuario(1982)"> Ver tu edad</h4>
+
+<div class="row">
+  <div class="col-7">      <!-- carrusel - galeria de fotos -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/carousel/falls2.jpg" class="d-block w-100" alt="cascadas">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img src="img/carousel/mountainskies.jpg" class="d-block w-100" alt="montanias">
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel/ocean.jpg" class="d-block w-100" alt="oceanos">
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div></div>
+  <div class="col-5"> Otro contenido</div>
+</div>
 
       <div class="row">
         <div class="col">

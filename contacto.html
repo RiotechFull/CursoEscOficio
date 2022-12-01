@@ -38,6 +38,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="contacto.html">Contacto</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="consultas.html">Consultas</a>
+                  </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Ejemplos
@@ -74,7 +77,7 @@
         aca va a ir el formulario para contactarse con la web
         -->
 
-        <form action="https://formsubmit.co/vguillen.edo.unc@gmail.com" method="post">
+        <form action="" method="post">
             <h3>Hace tu consulta</h3>
             <table>
                 <tr>
@@ -126,7 +129,7 @@
  <div class="container border transparente">
         <h2>Form Bootstrap Suscribite y recibi Info</h2>
         
-        <form class="row g-3 needs-validation" novalidate action="https://formsubmit.co/vguillen.edo.unc@gmail.com" method="POST">
+        <form name="formCont" class="row g-3 needs-validation" novalidate action="https://formsubmit.co/vguillen.edo.unc@gmail.com" method="POST">
           <div class="col-md-4">
             <label for="validationCustom01" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="validationCustom01" name="nombre" id="nombre" minlength="3" maxlength="30" placeholder="Primer y segundo nombre" required>
@@ -191,7 +194,7 @@
             </div>
           </div>
           <div class="col-12">
-            <button class="btn btn-primary" type="submit" onclick="window.alert('recibimos OK')">Suscribirme</button>
+            <button class="btn btn-primary" type="submit" onclick="envioOK()">Suscribirme</button>
           </div>
         </form>
 

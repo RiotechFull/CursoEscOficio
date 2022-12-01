@@ -16,8 +16,10 @@ body{
 }
 
 .transparente {
-  background: rgba(255, 157, 0, 0.30);
-
+  background: rgba(255, 255, 255, 0.3);
+}
+.transpwhite {
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .bordes {
@@ -244,8 +246,8 @@ th{
   nav li {
     padding: 8px;
     margin-bottom: 7px;
-    /*background-color: #00597a;*/
-    color: #060606;
+    color: #f00 !important;
+    font-weight: 700;
     float: right;
   }
 
@@ -255,9 +257,23 @@ th{
   }
   
   nav li a:hover {
-    
+    background-color: rgb(188, 227, 245);
     color: dimgray;
+    
   }
+  .cambioFoto {
+    background-color: rgba(137, 43, 226, 0.5);
+  }
+
+  .cambioFoto a:hover{
+    background: url('./img/gallery/wedding.jpg') rgba(137, 43, 226, 0.5);
+  }
+  
+  .icono-logo {
+    width: 90px;
+  }
+
+
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media only screen and (min-width: 600px) {
