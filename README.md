@@ -3,3 +3,6 @@ Archivos generados aleatoriamente en clases virtuales mediante la plataforma de 
 
 ## Trabajo final
 Sitio web de proyecto personal con secciones: Inicio, Sobre Mi, Servicios/productos, Blog y Contacto.
+
+### Finalizamos el 01/12
+Chau con el viento sur
